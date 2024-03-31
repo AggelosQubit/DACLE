@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: wheat;
+    text-align: center;
+}
+
+.titleMain {
+    text-align: center;
+}
+
+.toPopover {
+    font-size: 0px;
+    opacity: 0;
+}
+
+.ppopover {
+    border-radius: 5px;
+    border: 2px solid blue;
+}
+
+.ppopover:hover {
+    border: 2px solid red;
+
+    .toPopover {
+        font-size: 14px;
+        opacity: 1;
+    }
+}

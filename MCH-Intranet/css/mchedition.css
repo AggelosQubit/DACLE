@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gray;
+    /*    background-image: url("../img/carac.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;*/
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', monospace;
+}
+
+.bubbles {
+    font-size: large;
+}
+
+.title {
+    text-align: center;
+}
+
+.Csummary {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+.underDetail {
+    padding-left: 20px;
+
+    ul,
+    li {
+        list-style-type: inherit;
+        margin: 0;
+    }
+}
+
+.borderino {
+    border: 3px solid rgb(89, 8, 136);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px;
+}
+
+.flexerino {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexerinoCenter {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.Inlinerino {
+    display: inline-block;
+}
+
+.parag {
+    text-align: justify;
+}
+
+/*****************/
+.nav {
+    background: linear-gradient(90deg, rgba(0, 108, 255, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(255, 0, 0, 1) 100%);
+    display: flex;
+    justify-content: space-around;
+    color: wheat !important;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+/*******about********/
+.about {
+    color: wheat;
+}
+
+@media (min-width: 401px) and (max-width: 600px) {
+    .flexerino {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .flexerinoCenter {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .borderino {
+        border: 3px solid rgb(110, 110, 110);
+        border-radius: 8px;
+        box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .flexerino {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .parag {
+        padding-left: 3px;
+        text-align: unset;
+        text-wrap: balance;
+    }
+
+    .flexerinoCenter {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .borderino {
+        border: unset;
+        border-radius: unset;
+        box-shadow: unset;
+        margin-bottom: 10px;
+    }
+}

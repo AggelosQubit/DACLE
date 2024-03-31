@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    font-family: 'Courier New', monospace;
+    font-size: larger;
+}
+
+.nav {
+    margin-bottom: 10px;
+
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 108, 255, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(255, 0, 0, 1) 100%);
+
+
+    color: wheat !important;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.flexerino {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.groupments {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.Container {
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 3px solid rgb(110, 110, 110);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+    padding: 10px;
+
+    padding-bottom: 20px;
+}
+
+.bubble {
+
+    max-width: 400px;
+    border: 3px solid rgb(110, 110, 110);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.borderino {
+    border: 3px solid rgb(110, 110, 110);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+}
+
+.linked {
+    color: yellow;
+    background-color: gray
+}
+
+.backback {
+    background-image: url('../img/2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+}
+
+.stylizedText {
+    font-weight: bolder;
+    color: wheat;
+    margin-left: 15%;
+    margin-right: 15%;
+}

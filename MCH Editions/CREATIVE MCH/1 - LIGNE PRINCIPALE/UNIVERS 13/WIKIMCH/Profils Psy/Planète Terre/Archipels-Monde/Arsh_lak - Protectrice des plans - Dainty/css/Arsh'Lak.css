@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(21, 21, 58);
+    color: rgb(141, 141, 141);
+    font-family: "Courier New", Courier, monospace;
+}
+
+.flexInspo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    text-align: center;
+}
+
+.responsive {
+    width: 90%;
+    height: auto;
+}
+
+.originStory {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 5px solid rgb(141, 141, 141);
+    border-radius: 15px;
+}
+
+.actualOS {
+    text-align: start;
+}
+
+.Teyrah {
+    color: inherit;
+}
+
+.Teyrah:hover {
+    text-decoration: underline;
+    color: initial;
+}
+
+@media (max-width: 600px) {
+    .originStory {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 1%;
+        padding-right: 1%;
+        border: 5px solid rgb(141, 141, 141);
+        border-radius: 15px;
+    }
+}

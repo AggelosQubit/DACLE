@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(89, 134, 192);
+    font-family: "Courier New", Courier, monospace;
+}
+
+.title {
+    text-align: center;
+}
+
+.book {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.page {
+    width: 54%;
+    font-size: 25px;
+    padding-left: 5%;
+    padding-bottom: 0px;
+    padding-right: 5%;
+    margin-bottom: 10px;
+    border: 5px solid rgb(165, 152, 152);
+    border-radius: 15px;
+}
+
+.pageNumber {
+    margin: 0px;
+    padding: 0px;
+    bottom: 0;
+}
+
+.penseeInterne {
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.dialInter {
+    color: rgb(195, 197, 83);
+}
+
+.debutParag {
+    padding-left: 75px;
+}
+
+.glossaire {
+    color: red;
+}
+
+/*************POUR TELEPHONE**********/
+@media (max-width: 600px) {
+    .debutParag {
+        padding-left: 40px;
+    }
+
+    .page {
+        width: 94%;
+        font-size: 25px;
+        padding-left: 5%;
+        padding-bottom: 0px;
+        padding-right: 5%;
+        margin-bottom: 10px;
+        border: 5px solid rgb(165, 152, 152);
+        border-radius: 15px;
+    }
+
+    .originStory {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 1%;
+        padding-right: 1%;
+        border: 5px solid rgb(141, 141, 141);
+        border-radius: 15px;
+    }
+}

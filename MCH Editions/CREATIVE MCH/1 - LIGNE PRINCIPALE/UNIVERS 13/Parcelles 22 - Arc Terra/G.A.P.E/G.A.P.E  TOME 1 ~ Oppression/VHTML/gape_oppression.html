@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/gape_oppression.css">
+    <title>
+        G.A.P.E TOME 1 ~ Oppression
+    </title>
+</head>
+
+<body>
+    <div>
+        <h1 class="title"><a href="../../../../../../../../MCH-Intranet/mchintranet.html">MCH EDITIONS INTRANET</a>
+        </h1>
+    </div>
+
+    <div>
+        <h1 class="title" id="top"> G.A.P.E TOME 1 </h1>
+        <details>
+            <summary>L'Oppression : Page Storyboard</summary>
+            <div id='divPhotos'>
+            </div>
+        </details>
+
+        <script>
+            let divPhotos = document.getElementById("divPhotos");
+            for (let i = 0; i < 44; i++) {
+                if (i != 26) {
+                    let divForImg = document.createElement("div");
+                    let pageNumber = document.createElement("h3");
+                    pageNumber.innerHTML = "Page :" + (i + 1);
+
+                    let imgToAdd = document.createElement("img");
+                    imgToAdd.height = "900";
+                    imgToAdd.src = "../test/p" + (i + 1) + ".png";
+
+                    divForImg.style.textAlign = "center";
+                    divPhotos.style.display = "flex";
+                    divPhotos.style.flexWrap = "wrap";
+                    divPhotos.style.justifyContent = "space-evenly";
+
+
+                    divForImg.appendChild(pageNumber)
+                    divForImg.appendChild(imgToAdd);
+                    divPhotos.appendChild(divForImg);
+                }
+
+            }
+        </script>
+        <h1 class="title" id="top"> <a href="#top">Retourner en Haut</a> </h1>
+
+    </div>
+</body>
+
+</html>
