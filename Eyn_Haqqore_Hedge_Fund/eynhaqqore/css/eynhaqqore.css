@@ -86,6 +86,8 @@ body {
 
 }
 
+
+
 .container {
     max-width: 800px;
     margin: 10px;
@@ -126,6 +128,30 @@ h3 {
 
 p {
     margin-top: 0;
+}
+
+/*****traderIntegration****************************************************/
+
+.container-fluid {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.lévéluWan {
+    color: chartreuse;
+}
+
+.lévéluTsu {
+    color: orange;
+}
+
+.lévéluTri {
+    color: red;
+}
+
+.h2Serrer {
+    margin: 0px;
+    padding: 0px;
 }
 
 /*****Economic News Recaller****************************************************/
