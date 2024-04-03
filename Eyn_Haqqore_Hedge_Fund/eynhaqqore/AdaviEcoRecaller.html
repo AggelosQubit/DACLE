@@ -7,6 +7,15 @@
     <title>EYN-HAQQORE HEDGE FUND</title>
     <link rel="stylesheet" href="./css/eynhaqqore.css">
     <link rel="icon" type="image/x-icon" href="./img/favi.png">
+
+    <!-- Importing Web Component's Polyfill -->
+    <script src="./voice/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+    <!-- Importing Custom Elements -->
+    <link rel="import" href="./voice/src/voice-player.html">
+    <link rel="import" href="./voice/src/voice-recognition.html">
+
+
 </head>
 
 <body>
@@ -61,7 +70,31 @@
         </form>
     </div>
 -->
+    <div class="flexerino phase">
+        <div class="borderino">
+            <voice-player id="player-element" text=""></voice-player>
+            <form id="player-form">
+                <input class="form-control" id="player-input" type="text" value="">
+                <button class="form-control btn btn-success" id="player-submit">Read</button>
+            </form>
+            <script>
+                var form = document.querySelector('#player-form'),
+                    input = document.querySelector('#player-input'),
+                    element = document.querySelector('#player-element');
 
+                input.addEventListener('input', function (e) {
+                    element.setAttribute('text', input.value);
+                });
+
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    element.speak();
+                });
+            </script>
+        </div>
+
+
+    </div>
     <div class="flexerino phase">
         <iframe width="94%" height="1200px" id="nesgt" src="https://tradingeconomics.com/calendar"></iframe>
     </div>
