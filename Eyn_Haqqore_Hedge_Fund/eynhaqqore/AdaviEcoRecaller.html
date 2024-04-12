@@ -14,8 +14,6 @@
     <!-- Importing Custom Elements -->
     <link rel="import" href="./voice/src/voice-player.html">
     <link rel="import" href="./voice/src/voice-recognition.html">
-
-
 </head>
 
 <body>
@@ -37,67 +35,143 @@
         </div>
         <div>
             <a class="navlink" href="./AdaviEcoRecaller.html">
-                Adavi Economic New Recaller
+                Adavi Economic Trading Station
             </a>
         </div>
     </nav>
-    <div>
+    <div style="margin-bottom:100px;">
 
         <h1 class="title">
             <img height="50px" src="./img/favi.png" alt="logo">
             EYN-HAQQORE HEDGE FUND
         </h1>
-    </div>
-
-
-    <div>
-        <h2 class="title"> Economic News Recaller</h2>
-    </div>
-    <!---
-    <div class="flexerino">
-        <form class="form" method="POST" action="./AdaviEcoRecaller.html">
-            <input class="form-control" type="text" name="namenews" placeholder="Name of the economic new to track">
-            <input class="form-control" type="datetime-local" name="datehournews">
-            <input class="form-control" type="url" name="urlnews" placeholder="Url of the economic new to track">
-            <select class="form-control" name="DayTraderName">
-                <option value="" disabled selected>Select the DayTrader Name</option>
-                <option value="@mchBlackJanus">mchBlackJanus</option>
-                <option value="@MCHBsk">MCHBsk</option>
-                <option value="@MCHSasuji">MCHSasuji</option>
-                <option value="@mchLinareythen">mchLinareythen</option>
-            </select>
-            <button class="btn btn-success" type="submit"> Register Notification </button>
-        </form>
-    </div>
--->
-    <div class="flexerino phase">
-        <div class="borderino">
-            <voice-player id="player-element" text=""></voice-player>
-            <form id="player-form">
-                <input class="form-control" id="player-input" type="text" value="">
-                <button class="form-control btn btn-success" id="player-submit">Read</button>
-            </form>
-            <script>
-                var form = document.querySelector('#player-form'),
-                    input = document.querySelector('#player-input'),
-                    element = document.querySelector('#player-element');
-
-                input.addEventListener('input', function (e) {
-                    element.setAttribute('text', input.value);
-                });
-
-                form.addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    element.speak();
-                });
-            </script>
+        <div>
+            <h2 class="title"> Economic Trading Station</h2>
         </div>
+    </div>
+
+    <div width="94%">
+        <h1 class="title">Economic Watchtower</h1>
+        <div class="borderino">
+            <div class="flexerino">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+                            {
+                                "feedMode": "market",
+                                    "market": "forex",
+                                        "isTransparent": false,
+                                            "displayMode": "regular",
+                                                "width": 400,
+                                                    "height": 550,
+                                                        "colorTheme": "dark",
+                                                            "locale": "fr"
+                            }
+                        </script>
+                </div>
+                <!-- TradingView Widget END -->
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+                            {
+                                "colorTheme": "dark",
+                                    "isTransparent": false,
+                                        "width": "400",
+                                            "height": "550",
+                                                "locale": "en",
+                                                    "importanceFilter": "-1,0,1",
+                                                        "countryFilter": "ar,au,br,ca,cn,fr,de,in,id,it,jp,kr,mx,ru,sa,za,tr,gb,us,eu"
+                            }
+                        </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+            <h2 class="title">Detailed News Day</h2>
+            <div>
+                <div class="flexerino phase">
+                    <iframe width="94%" height="400px" id="nesgt" src="https://tradingeconomics.com/calendar"></iframe>
+                </div>
+                <div class="flexerino phase">
+                    <div class="borderino">
+                        <voice-player id="player-element" text=""></voice-player>
+                        <form id="player-form">
+                            <input class="form-control" id="player-input" type="text" value="">
+                            <button class="form-control btn btn-success" id="player-submit">Read</button>
+                        </form>
+                        <script>
+                            var form = document.querySelector('#player-form'),
+                                input = document.querySelector('#player-input'),
+                                element = document.querySelector('#player-element');
+
+                            input.addEventListener('input', function (e) {
+                                element.setAttribute('text', input.value);
+                            });
+
+                            form.addEventListener('submit', function (e) {
+                                e.preventDefault();
+                                element.speak();
+                            });
+                        </script>
+                    </div>
 
 
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="flexerino phase">
-        <iframe width="94%" height="1200px" id="nesgt" src="https://tradingeconomics.com/calendar"></iframe>
+
+    <h2 class="title">Forex Heat Map</h2>
+    <div class="flexerino">
+        <p class="toooltip">
+            Une Forex heat map représente visuellement la force et la faiblesse des devises à travers différents paires
+            de devises.<br>
+            Cela aide les traders à identifier rapidement les devises qui se comportent bien <br>
+            et celles qui sont moins performantes par rapport aux autres.
+        </p>
+        <iframe onload="flushh()"
+            src="https://widgets.myfxbook.com/widgets/heat-map.html?symbols=1,4,7,2,3,51,46,13,14,17,107,27,29,47,9,10&type=0"
+            width="94%" height="425px" frameborder="0">
+        </iframe>
+
     </div>
+    <hr>
+    <div class="flexerino">
+
+        <h2 class=""> Bid Ask Spread Comparator</h2>
+        <iframe
+            src="https://widget.myfxbook.com/widget/broker-spreads.html?symbols=EURUSD,GBPJPY,EURJPY,GBPUSD,BTCUSD,USDJPY,XAUUSD,CHFJPY,EURCAD,EURCHF,EURGBP,GBPAUD,NZDJPY,USDCHF,AUDCHF,AUDJPY,AUDNZD,AUDUSD&mt4Servers=1011,11475,1453,1486,15732,1768,2061,2320,4582,5569,6052,6245&includeCommissions=false&promoteBroker=0"
+            width="94%" height="600px">
+        </iframe>
+    </div>
+    <hr>
+    <h2 class="title">Rapid Chart Overview</h2>
+
+    <div class="flexerino">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                    {
+                        "width": "94%",
+                            "height": "800",
+                                "symbol": "OANDA:EURUSD",
+                                    "interval": "D",
+                                        "timezone": "Etc/UTC",
+                                            "theme": "dark",
+                                                "style": "1",
+                                                    "locale": "en",
+                                                        "enable_publishing": false,
+                                                            "allow_symbol_change": true,
+                                                                "calendar": false,
+                                                                    "support_host": "https://www.tradingview.com"
+                    }
+                </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </div>
+
 </body>
 
 </html>
