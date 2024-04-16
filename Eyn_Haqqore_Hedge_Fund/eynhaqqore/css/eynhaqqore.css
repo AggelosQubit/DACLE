@@ -183,7 +183,17 @@ p {
 /*copied bootstrap class*/
 .btn-success {
     color: #fff;
-    background-color: #28a745;
+    background-color: forestgreen;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: red;
+}
+
+.btn-gray {
+    color: #fff;
+    background-color: rgb(122, 122, 122);
 }
 
 .btn:hover {
