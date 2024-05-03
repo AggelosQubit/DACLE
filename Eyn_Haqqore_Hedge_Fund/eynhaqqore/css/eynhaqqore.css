@@ -206,11 +206,21 @@ p {
     transform: translateY(4px);
 }
 
+.ytSize {
+    width: 54%;
+    height: 550px;
+}
+
 /*****************************/
 @media (max-width: 769px) {
     .form {
         display: grid;
         width: 94%;
+    }
+
+    .ytSize {
+        width: 400px;
+        height: 315px;
     }
 
     .pidio {

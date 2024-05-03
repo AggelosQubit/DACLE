@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(10, 35, 82) !important;
+}
+
+table {
+    width: 80%
+}
+
+td {
+    padding: 1em 6pt;
+    vertical-align: middle
+}
+
+tr:nth-child(2n) {
+    background-color: #3b3b3b;
+    border-color: #f9f9f9
+}
+
+thead td {
+    background-color: #3b3b3b;
+    color: #889399;
+    text-align: center;
+    line-height: 13pt;
+    font-size: 8pt;
+    text-transform: uppercase;
+    border-right: 1pt solid #e5e9ec
+}
+
+thead td:last-child {
+    border-right: 1pt solid #fff
+}
+
+tbody td {
+    font-size: 9pt
+}
+
+.ceil-string {
+    text-align: center
+}
+
+.ceil-number {
+    text-align: right
+}
