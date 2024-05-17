@@ -1,0 +1,162 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/boiteAIdee.css">
+</head>
+
+<body>
+    <a class="title" href="../../../../../MCH-Intranet/mchintranet.html">
+        <h1>MCH EDITIONS INTRANET</h1>
+    </a>
+    <details>
+        <summary class="idea title">
+            README
+        </summary>
+        <iframe src="../VHTML/3 - README.txt" frameBorder="0" class="" scrolling="auto" height="50%" width="100%">
+        </iframe>
+    </details>
+    <details>
+        <summary class="idea title">
+            1 - Titre des idées Idées.txt
+        </summary>
+        <iframe src="../VHTML/1 - Titre des idées Idées.txt" frameBorder="0" class="" scrolling="auto" height="50%"
+            width="100%">
+        </iframe>
+    </details>
+    <details>
+        <summary class="idea title">
+            2 - Idées de Scene.txt
+        </summary>
+        <iframe src="../VHTML/2 - Idées de Scene.txt" frameBorder="0" class="" scrolling="auto" height="50%"
+            width="100%">
+        </iframe>
+    </details>
+
+    <details>
+        <summary class="idea title">
+            Contrat
+        </summary>
+        <iframe src="../VHTML/Contrat.txt" frameBorder="0" class="" scrolling="auto" height="50%" width="100%">
+        </iframe>
+    </details>
+
+    <details>
+        <summary class="idea title">
+            Divina Héléka
+        </summary>
+        <iframe src="../VHTML/Divina H_éléka.txt" frameBorder="0" class="" scrolling="auto" height="50%" width="100%">
+        </iframe>
+    </details>
+
+    <details>
+        <summary class="idea title">
+            Idees-
+        </summary>
+        <iframe src="../VHTML/Idees-.txt" frameBorder="0" class="" scrolling="auto" height="50%" width="100%">
+        </iframe>
+    </details>
+
+    <details>
+        <summary class="idea title">
+            Idées _
+        </summary>
+        <iframe src="../VHTML/Idées _.txt" frameBorder="0" class="" scrolling="auto" height="50%" width="100%">
+        </iframe>
+    </details>
+
+    <details>
+        <summary class="idea title">
+            MCH Idées 3
+        </summary>
+        <iframe src="../VHTML/MCH Idées 3.txt" frameBorder="0" class="" scrolling="auto" height="50%" width="100%">
+        </iframe>
+    </details>
+
+    <details>
+        <summary class="idea title">
+            MCH Motivations
+        </summary>
+        <iframe src="../VHTML/MCH Motivations -VMV-Draft 1.txt" frameBorder="0" class="" scrolling="auto" height="50%"
+            width="100%">
+        </iframe>
+    </details>
+
+    <details>
+        <summary class="idea title">
+            Miss Apologia Commission To Waveloop
+        </summary>
+        <iframe src="../VHTML/Miss Apologia Commission To Waveloop.txt" frameBorder="0" class="" scrolling="auto"
+            height="50%" width="100%">
+        </iframe>
+    </details>
+
+    <details>
+        <summary class="idea title">
+            Tome 1
+        </summary>
+        <iframe src="../VHTML/Tome 1.txt" frameBorder="0" class="" scrolling="auto" height="50%" width="100%">
+        </iframe>
+    </details>
+
+
+    <details>
+        <summary class="idea title">
+            z---CompiledAM
+        </summary>
+        <iframe src="../VHTML/z---CompiledAM.txt" frameBorder="0" class="" scrolling="auto" height="50%" width="100%">
+        </iframe>
+    </details>
+    <hr>
+
+    <div>
+
+        <div class="slideshow-container">
+            <div class="flexerino">
+                <a class="prev" onclick="plusSlides(-1,0)">
+                    <h1 class="btnArrow">&#10094;</h1>
+                </a>
+                <a class="next" onclick="plusSlides(1,0)">
+                    <h1 class="btnArrow">&#10095;</h1>
+                </a>
+            </div>
+            <div class="mySlides1">
+                <img width="94%" src="./img/1.png" alt="1">
+            </div>
+            <div class="mySlides1">
+                <img width="94%" src="./img/2.png" alt="2">
+            </div>
+            <div class="mySlides1">
+                <img width="94%" src="./img/3.png" alt="3">
+            </div>
+            <div class="mySlides1">
+                <img width="94%" src=" ./img/4.png" alt="4">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let slideIndex = [1, 1];
+        /* Class the members of each slideshow group with different CSS classes */
+        let slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "flex";
+        }
+    </script>
+</body>
+
+</html>
