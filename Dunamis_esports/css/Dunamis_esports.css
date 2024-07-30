@@ -185,9 +185,7 @@ tbody td {
     top: -webkit-calc(50% - 100px);
 }
 
-
-
-.server {
+.serverOffline {
     width: auto;
     padding-right: 10px;
     margin-right: 5px;
@@ -196,40 +194,87 @@ tbody td {
     border-radius: 1px;
 }
 
-.server ul {
+.serverOffline ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.server:first-child ul li {
+.serverOffline:first-child ul li {
     width: 10px;
     height: 10px;
     float: left;
     margin-left: 10px;
     margin-top: 4px;
-    background: rgba(244, 118, 118, 0.6);
+    background: rgba(228, 0, 0, 0.6);
 }
 
-.server ul li:first-child {
+.serverOffline ul li:first-child {
     animation: pattern1 0.14s linear infinite;
 }
 
-.server ul li:nth-child(2) {
+.serverOffline ul li:nth-child(2) {
     animation: pattern1 0.14s 0.02s linear infinite;
 }
 
-.server ul li:last-child {
+.serverOffline ul li:last-child {
     animation: pattern1 0.14s 0.05s linear infinite;
+}
+
+
+.serverOnline {
+    width: auto;
+    padding-right: 10px;
+    margin-right: 5px;
+    height: 20px;
+    background: #3a3a3a;
+    border-radius: 1px;
+}
+
+.serverOnline ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.serverOnline:first-child ul li {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 4px;
+    background: rgba(15, 167, 1, 0.6);
+}
+
+.serverOnline ul li:first-child {
+    animation: pattern2 0.14s linear infinite;
+}
+
+.serverOnline ul li:nth-child(2) {
+    animation: pattern2 0.14s 0.02s linear infinite;
+}
+
+.serverOnline ul li:last-child {
+    animation: pattern2 0.14s 0.05s linear infinite;
 }
 
 @keyframes pattern1 {
     0% {
-        background: rgba(244, 118, 118, 0.6);
+        background: rgba(228, 0, 0, 0.6);
     }
 
     100% {
-        background: rgb(244, 118, 118);
+        background: rgba(228, 0, 0, 0.6);
+    }
+}
+
+@keyframes pattern2 {
+    0% {
+        background: rgba(15, 167, 1, 0.6);
+    }
+
+    100% {
+        background: rgba(15, 167, 1, 0.6);
     }
 }
 
