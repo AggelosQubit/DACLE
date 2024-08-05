@@ -1,6 +1,11 @@
 body {
     height: 100%;
     width: 100%;
+    padding-left: 100;
+    padding-right: 100;
+    background-color: rgb(5, 0, 73);
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
     text-align: center;
     background-image: url("./img/0_0.png");
     background-repeat: no-repeat;
@@ -27,4 +32,8 @@ body {
     border-radius: 8px;
     background-color: wheat;
     box-shadow: 3px 3px 3px 2px rgba(255, 255, 255, 0.2);
+}
+
+.title {
+    text-align: center;
 }

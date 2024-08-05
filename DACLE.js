@@ -1,10 +1,9 @@
 const express = require('express');
-const path = require('path');
 const https = require('https');
 const fs = require('fs');
 const app = express();
 const port = process.env.PORT || 2371;
-const cheerio = require('cheerio');
+const { exec } = require('child_process');
 // Définit les dossier public pour servir les fichiers statiques
 
 
@@ -15,6 +14,37 @@ const credentials = { key: privateKey, cert: certificate };
 // Create HTTPS server
 const httpsServer = https.createServer(credentials, app);
 
+
+app.route('/Dunamis_esports/Minecraftinfos.html')
+    .post(
+        (req, res) => {
+            //console.log("IN AdaviEcoRecaller POST");
+            exec("ps -aux | grep server.jar",
+                function (error, stdout, stderr) {
+                    if (error !== null) console.log('exec error: ' + error);
+
+                    //Xmx1024M
+                    var commandResult = stdout + "\n" + stderr;
+                    (commandResult.includes("Xmx1024M"))
+                        ? res.sendFile('MinecraftinfosOnline.html', { root: __dirname + '/Dunamis_esports/' })
+                        : res.sendFile('MinecraftinfosOffline.html', { root: __dirname + '/Dunamis_esports/' });
+                });
+        }
+    )
+    .get(
+        (req, res) => {
+            exec("ps -aux | grep server.jar",
+                function (error, stdout, stderr) {
+                    if (error !== null) console.log('exec error: ' + error);
+
+                    //Xmx1024M
+                    var commandResult = stdout + "\n" + stderr;
+                    (commandResult.includes("Xmx1024M"))
+                        ? res.sendFile('MinecraftinfosOnline.html', { root: __dirname + '/Dunamis_esports/' })
+                        : res.sendFile('MinecraftinfosOffline.html', { root: __dirname + '/Dunamis_esports/' });
+                });
+        }
+    );
 
 app.route('/Eyn_Haqqore_Hedge_Fund/eynhaqqore/AdaviEcoRecaller.html')
     .post(

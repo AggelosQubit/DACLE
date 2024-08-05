@@ -1,0 +1,154 @@
+body {
+    height: 100%;
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+    padding-left: 100;
+    padding-right: 100;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(44, 0, 61);
+    background-image: url("./img/0_0.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.bubbles {
+    font-size: large;
+}
+
+.title {
+    text-align: center;
+}
+
+.Csummary {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+.underDetail {
+    padding-left: 20px;
+
+    ul,
+    li {
+        list-style-type: inherit;
+        margin: 0;
+    }
+}
+
+.borderino {
+    border: 3px solid rgb(89, 8, 136);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px;
+}
+
+.inlineFlexerino {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.flexerino {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexerinoCenter {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.Inlinerino {
+    display: inline-block;
+}
+
+.parag {
+    text-align: justify;
+}
+
+.margins {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/***************/
+h1,
+h2,
+h3 {
+    color: #b5b8b6;
+}
+
+.tribe {
+    margin-bottom: 20px;
+}
+
+.event {
+    margin-bottom: 10px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+/*****************/
+@media (min-width: 401px) and (max-width: 600px) {
+    .flexerino {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .flexerinoCenter {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .borderino {
+        border: 3px solid rgb(110, 110, 110);
+        border-radius: 8px;
+        box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .flexerino {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .parag {
+        padding-left: 3px;
+        text-align: unset;
+        text-wrap: balance;
+    }
+
+    .flexerinoCenter {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .borderino {
+        border: unset;
+        border-radius: unset;
+        box-shadow: unset;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    color: red;
+    background-color: black;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flexerino {
+    display: flex;
+    justify-content: space-around;
+}
+
+.margins {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.title {
+    text-align: center;
+}
+
+.borderino {
+    border: 3px solid rgb(89, 8, 136);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px;
+}
