@@ -1,14 +1,16 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Courier New', monospace;
-    font-size: larger;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-}
-
 table {
     width: 100%
+}
+
+.flexerino {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.textColor {
+    color: wheat
 }
 
 td {
@@ -23,10 +25,10 @@ tr:nth-child(2n) {
 
 thead td {
     background-color: #3b3b3b;
-    color: #889399;
+    color: #cad1d4;
     text-align: center;
     line-height: 13pt;
-    font-size: 8pt;
+    font-size: 10pt;
     text-transform: uppercase;
     border-right: 1pt solid #e5e9ec
 }
@@ -40,30 +42,58 @@ tbody td {
 }
 
 .ceil-string {
-    text-align: center
+    text-align: center;
 }
 
 .ceil-number {
-    text-align: right
+    text-align: right;
 }
 
-/*! report : css : end !*/
-
-.flexerino {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-.borderino {
+.ecoNews {
+    text-align: center;
+    max-width: 350px;
     border: 3px solid rgb(110, 110, 110);
     border-radius: 8px;
     box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
-    padding: 10px;
-    margin: 10px;
+    padding: 40px;
 }
 
-.title {
-    text-align: center;
+.ecoNewsName {
+    border-radius: 24px;
+    padding: 20px;
+    background-color: rgb(14, 14, 87);
+    color: #beccd1;
+    font-size: 16px;
+}
+
+.ecoNewDirectionUp {
+    max-width: 100px;
+    border-radius: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: rgb(27, 136, 17);
+    color: #beccd1;
+}
+
+.ecoNewDirectionDown {
+    max-width: 100px;
+    border-radius: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: rgb(201, 29, 29);
+    color: #beccd1;
+}
+
+.murDroite {
+    padding-right: 20px;
+    margin-left: 20px;
+    border-right: #fff 2px solid;
+}
+
+.murGauche {
+    padding-left: 20px;
+    margin-right: 20px;
+    border-left: #fff 2px solid;
 }
