@@ -11,7 +11,7 @@ body {
     margin-bottom: 10px;
 
     width: 100%;
-    background: linear-gradient(90deg, rgba(0, 108, 255, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(255, 0, 0, 1) 100%);
+    background: linear-gradient(90deg, rgb(4, 61, 141) 0%, rgb(87, 86, 86) 35%, rgb(133, 3, 3) 100%);
 
 
     color: wheat !important;

@@ -66,9 +66,10 @@ body {
 }
 
 a {
-    color: inherit;
+    color: rgb(78, 78, 78);
+    text-shadow: 1px 4px 4px rgb(15, 132, 136);
     /* blue colors for links too */
-    text-decoration: inherit;
+    /*text-decoration: inherit;*/
     /* no underline */
 }
 
@@ -89,6 +90,15 @@ a {
     padding: 20px;
     margin: 20px;
     text-wrap: wrap;
+}
+
+evehover {
+    border: hidden;
+}
+
+.evehover:hover {
+    border: 3px solid white;
+    border-radius: 8px;
 }
 
 .inlineFlexerino {
@@ -129,6 +139,7 @@ td {
 }
 
 tr:nth-child(2n) {
+    color: rgb(184, 184, 184);
     background-color: #3b3b3b;
     border-color: #f9f9f9
 }
