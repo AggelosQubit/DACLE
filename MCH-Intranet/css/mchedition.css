@@ -1,12 +1,12 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: gray;
+    background-color: rgb(36, 36, 36);
     /*    background-image: url("../img/carac.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;*/
-    color: rgb(0, 0, 0);
+    color: rgb(192, 192, 192);
     font-family: 'Courier New', monospace;
 }
 
@@ -38,6 +38,17 @@ a {
         list-style-type: inherit;
         margin: 0;
     }
+}
+
+.page {
+    width: 70%;
+    font-size: 25px;
+    padding-left: 5%;
+    padding-bottom: 0px;
+    padding-right: 5%;
+    margin-bottom: 10px;
+    border: 5px solid rgb(165, 152, 152);
+    border-radius: 15px;
 }
 
 .borderino {
@@ -74,10 +85,10 @@ a {
 
 /*****************/
 .nav {
-    background: linear-gradient(90deg, rgba(0, 108, 255, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(255, 0, 0, 1) 100%);
+    background: linear-gradient(90deg, rgb(4, 61, 141) 0%, rgb(87, 86, 86) 35%, rgb(133, 3, 3) 100%);
     display: flex;
     justify-content: space-around;
-    color: wheat !important;
+    color: rgb(214, 213, 213) !important;
     margin-bottom: 10px;
     list-style: none;
 }
