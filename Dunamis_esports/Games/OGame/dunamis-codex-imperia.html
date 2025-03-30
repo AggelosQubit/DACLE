@@ -3,84 +3,153 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../css/Dunamis_esports.css">
-    <title>Codex Dunamis Imperia — Barar Sameda</title>
+    <link rel="stylesheet" href="../../css/Ogame.css">
+    <title>Codex Dunamis Imperia</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #0f0f0f;
-            color: #d0d0d0;
-            font-family: 'Orbitron', sans-serif;
-            padding: 40px;
-        }
-
-        h1 {
-            color: #4ecdc4;
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 40px;
-            letter-spacing: 2px;
-        }
-
-        .legend {
-            background: linear-gradient(145deg, #2c2f36, #1a1c20);
-            border: 1px solid #4ecdc4;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 40px;
-            box-shadow: 0 0 12px rgba(78, 205, 196, 0.25);
-        }
-
-        .legend h2 {
-            color: #ffffff;
-            margin-bottom: 10px;
-        }
-
-        .legend p {
-            font-size: 14px;
-            color: #aaa;
-        }
-
-        .portrait {
-            width: 100%;
-            max-width: 600px;
-            margin: 20px auto;
-            display: block;
-            border-radius: 6px;
-            border: 1px solid #4ecdc4;
-            box-shadow: 0 0 6px rgba(78, 205, 196, 0.5);
-        }
-
-        .borderino {
-            width: 32%;
-            border: 3px solid rgb(110, 110, 110);
-            border-radius: 8px;
-            box-shadow: 2px 2px 2px 2px rgb(20, 144, 153);
-            padding: 20px;
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 
 <body>
+    <div id="imageModal">
+        <span id="closeModal" onclick="closeModal()">&times;</span>
+        <img name="toMod" id="modalImage" src="" alt="Img Zoom">
+    </div>
+
     <a href="../../Ogame.html">
         <h2 class="legend title">Dunamis Imperium</h2>
     </a>
 
     <h1>DUNAMIS CODEX IMPERIA</h1>
-
     <details>
+        <summary>
+            <h1>Memoria Concordae</h1>
+        </summary>
+        <div class="legend title">
+            <div class="flexerino">
+                <div class=" entries">
+                    <h3>Entry #1</h3>
+                    <hr>
+                    <p>
+                        Debut des differents comptes autour du 20/03/25
+                    </p>
+                </div>
+            </div>
+            <div class="flexerino">
+                <div class=" entries">
+                    <h3>Entry #2</h3>
+                    <hr>
+                    <p>
+                        Création de l'alliance 20.03.2025
+                    </p>
+                </div>
+            </div>
+            <div class="flexerino">
+                <div class=" entries">
+                    <h3>Entry #3</h3>
+                    <hr>
+                    <p>
+                        KIN LAND En état de Hors la loi => Conséquence inconnu
+                    </p>
+                </div>
+            </div>
+            <div class="flexerino">
+                <div class=" entries">
+                    <h3>Entry #4</h3>
+                    Mission de Stationnement envoyer Par Linareythen & Commander Macarius + Envoi de Fret
+                    <hr>
+                </div>
+            </div>
+            <div class="flexerino">
+                <div class=" entries">
+                    <h3>Entry #5</h3>
+                    <div class="flexerino">
+                        <div>
+                            Premier rapport de Combat associé à KIN LAND
+                        </div>
+                        <div>
+                            <img name="toMod" src="../../img/ogame/1.jpg" alt="" width="50%">
+                        </div>
+                    </div>
+                    <div>
+                        Rapport complet d'espionnage sur EkinoX
+                    </div>
+                    <div class="flexerino">
 
+                        <div>
+                            <img name="toMod" src="../../img/ogame/eki/2.jpg" alt="" width="24%">
+                            <img name="toMod" src="../../img/ogame/eki/3.jpg" alt="" width="24%">
+                            <img name="toMod" src="../../img/ogame/eki/4.jpg" alt="" width="24%">
+                            <img name="toMod" src="../../img/ogame/eki/5.jpg" alt="" width="24%">
+
+                        </div>
+
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="flexerino">
+                <div class="entries">
+                    <h3>Entry #6</h3>
+                    <div class="flexerino">
+                        <div>
+                            Attaque de Représaille sur EkinoX
+                        </div>
+
+                        <div>
+                            <img name="toMod" src="../../img/ogame/eki/reki.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
     </details>
     <details>
         <summary>
-            <h1 class="title">Legends</h1>
+            <h1 class="title">Dunamea Strategicon</h1>
+        </summary>
+        <div class="legend title">
+            📘 Dunamea Strategicon <br>
+            « L’esprit tactique de l’Imperium cristallisé dans l’encre et la mémoire. »<br>
+            Recueil sacré des doctrines militaires, stratagèmes stellaires et protocoles de rétribution impériale.
+            Rédigé sous l’autorité du Konclave,<br>
+            le Strategicon n’est pas un simple manuel… C’est une vision gravée dans le néant.
+        </div>
+    </details>
+    <details>
+        <summary>
+            <h1 class="title">Nomen Daevarum</h1>
         </summary>
         <div class="legend title">
             <h2>Barar Sameda — Fondatrice Suprême</h2>
+            <div class="flexerino">
+
+                <div>
+                    <div>
+                        <a target="_blank"
+                            href="https://s270-fr.ogame.gameforge.com/game/index.php?page=ingame&component=playerprofile&profileId=103543">
+                            <img name="toMod" src="../../img/ogame/codex/barar/bararYoung.webp"
+                                alt="Barar Sameda pilote" class="portrait">
+                        </a>
+                    </div>
+                    <div>
+                        <caption>Avatar InGame</caption>
+                    </div>
+
+                </div>
+            </div>
             <div class="flexerinob">
                 <div class="borderino">
-                    <img src="../../img/ogame/codex/barar/bararYoung.webp" alt="Barar Sameda pilote" class="portrait">
+                    <div>
+                        <div>
+                            <img name="toMod" src="../../img/ogame/codex/barar/solun.png" alt="Solun voye Sameda"
+                                class="portrait">
+                        </div>
+                        <div>
+                            <caption>«→ Le Soleil a envoyé Sameda.»</caption>
+                        </div>
+
+                    </div>
+
                     <p>
                         Ancienne pilote prodige des Loryas, Barar Sameda a vu son monde natal, Zanmi-Lorya, sombrer dans
                         les flammes. Ce jour-là, l’enfant devint guerrière. Elle surpassa tous les records de pilotage
@@ -91,20 +160,8 @@
                     </p>
                 </div>
                 <div class="borderino">
-                    <img src="../../img/ogame/codex/barar/violonce.png" alt="Barar Sameda résolue" class="portrait">
-                    <p>
-                        Ce moment de résolution est devenu légende : debout sur les ruines, le vent dans les cheveux,
-                        elle
-                        tourna le regard vers ce qu’elle laisserait derrière. Ce fut le début de l’ordre galactique. Le
-                        silence
-                        précéda sa phrase, inscrite depuis dans tous les halls militaires du Dunamis :
-                    </p>
-                    <p style="font-style: italic; text-align: center; color: #4ecdc4;">
-                        « Si la violence ne résout pas ton problème, c’est que tu ne frappes pas assez fort. »
-                    </p>
-                </div>
-                <div class="borderino">
-                    <img src="../../img/ogame/codex/barar/Barar Sameda.png" alt="Barar légendaire" class="portrait">
+                    <img name="toMod" src="../../img/ogame/codex/barar/Barar Sameda.png" alt="Barar légendaire"
+                        class="portrait">
                     <p>
                         Aujourd’hui, son nom est murmuré dans les plus hautes sphères. Barar Sameda n’est plus seulement
                         une
@@ -128,10 +185,41 @@
                         la volonté, et la lame.
                     </p>
                 </div>
+                <div class="borderino">
+                    <img name="toMod" src="../../img/ogame/codex/barar/violonce.png" alt="Barar Sameda résolue"
+                        class="portrait">
+                    <p>
+                        Ce moment de résolution est devenu légende : debout sur les ruines, le vent dans les cheveux,
+                        elle
+                        tourna le regard vers ce qu’elle laisserait derrière. Ce fut le début de l’ordre galactique. Le
+                        silence
+                        précéda sa phrase, inscrite depuis dans tous les halls militaires du Dunamis :
+                    </p>
+                    <p style="font-style: italic; text-align: center; color: #4ecdc4;">
+                        « Si la violence ne résout pas ton problème, c’est que tu ne frappes pas assez fort. »
+                    </p>
+                </div>
+
             </div>
         </div>
     </details>
+    <script>
+        // Modal image viewer
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const portraits = document.getElementsByName('toMod');
 
+        portraits.forEach(img => {
+            img.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+            });
+        });
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>

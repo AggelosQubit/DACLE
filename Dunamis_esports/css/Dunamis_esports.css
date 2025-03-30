@@ -119,6 +119,11 @@ evehover {
     justify-content: space-around;
 }
 
+.flexerinob {
+    display: flex;
+    justify-content: space-between;
+}
+
 .flexerinoCenter {
     display: flex;
     justify-content: space-evenly;
@@ -289,6 +294,9 @@ tbody td {
     }
 }
 
+.bottomSpace {
+    margin-bottom: 500px;
+}
 
 @media (min-width: 401px) and (max-width: 600px) {
     .vision {
