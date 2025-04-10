@@ -19,6 +19,68 @@
     </a>
 
     <h1>DUNAMIS CODEX IMPERIA</h1>
+
+    <details open>
+        <summary>
+            <h1 class="title">Dunamea Strategicon</h1>
+        </summary>
+        <div class="legend title">
+            📘 Dunamea Strategicon <br>
+            « L’esprit tactique de l’Imperium cristallisé dans l’encre et la mémoire. »<br>
+            Recueil sacré des doctrines militaires, stratagèmes stellaires et protocoles de rétribution impériale.
+            Rédigé sous l’autorité du Konclave,<br>
+            le Strategicon n’est pas un simple manuel… C’est une vision gravée dans le néant.
+        </div>
+        <div class="legend flexerino">
+            <details open>
+                <summary>⚔️ Doctrine Tactique : Chaîne de Frappe DUNAMIS</summary>
+                <div class="flexerino">
+                    <div class="carousel">
+                        <div class="carousel-images" id="carouselImages">
+                            <img width="25%" id="carouselImage" class="carousel-image" src="" alt="Slide">
+
+                        </div>
+                        <div class="controls">
+                            <button onclick="prevSlide()">⟨</button>
+                            <button onclick="nextSlide()">⟩</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="step-title" id="stepTitle">FIND</div>
+                <div class="step-desc" id="stepDesc">Identifier les cibles prioritaires par des opérations de
+                    renseignement et d'observation.</div>
+            </details>
+        </div>
+
+    </details>
+    <details>
+        <summary>
+            <h1 class="title">Nomen Daevarum</h1>
+        </summary>
+        <div class="flexerino">
+            <img width="20%" src="../../img/ogame/beade.jpg" alt="Become a Daeva ">
+        </div>
+        <hr>
+        <div class="legend title">
+            <h2>Barar Sameda — Fondatrice Suprême</h2>
+            <div class="flexerino">
+
+                <div>
+                    <div>
+                        <a target="_blank" href="./Daevas/BararSameda.html">
+                            <img name="toMod" src="../../img/ogame/codex/barar/bararYoung.webp"
+                                alt="Barar Sameda pilote" class="portrait">
+                        </a>
+                    </div>
+                    <div>
+                        <caption>Avatar InGame</caption>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </details>
     <details>
         <summary>
             <h1>Memoria Concordae</h1>
@@ -103,45 +165,6 @@
             </div>
         </div>
     </details>
-    <details>
-        <summary>
-            <h1 class="title">Dunamea Strategicon</h1>
-        </summary>
-        <div class="legend title">
-            📘 Dunamea Strategicon <br>
-            « L’esprit tactique de l’Imperium cristallisé dans l’encre et la mémoire. »<br>
-            Recueil sacré des doctrines militaires, stratagèmes stellaires et protocoles de rétribution impériale.
-            Rédigé sous l’autorité du Konclave,<br>
-            le Strategicon n’est pas un simple manuel… C’est une vision gravée dans le néant.
-        </div>
-    </details>
-    <details>
-        <summary>
-            <h1 class="title">Nomen Daevarum</h1>
-        </summary>
-        <div class="flexerino">
-            <img width="100%" src="../../img/ogame/beade.jpg" alt="Become a Daeva ">
-        </div>
-        <hr>
-        <div class="legend title">
-            <h2>Barar Sameda — Fondatrice Suprême</h2>
-            <div class="flexerino">
-
-                <div>
-                    <div>
-                        <a target="_blank" href="./Daevas/BararSameda.html">
-                            <img name="toMod" src="../../img/ogame/codex/barar/bararYoung.webp"
-                                alt="Barar Sameda pilote" class="portrait">
-                        </a>
-                    </div>
-                    <div>
-                        <caption>Avatar InGame</caption>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </details>
     <script>
         // Modal image viewer
         const modal = document.getElementById('imageModal');
@@ -158,6 +181,59 @@
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
         }
+
+        const slides = [
+            {
+                title: "FIND",
+                desc: "Identifier les cibles prioritaires par des opérations de renseignement et d'observation.",
+                img: "../../img/ogame/codex/killchain/find.png"
+            },
+            {
+                title: "FIX",
+                desc: "Fixer la cible dans l’espace et le temps pour la rendre vulnérable à une frappe.",
+                img: "../../img/ogame/codex/killchain/fix.png"
+            },
+            {
+                title: "TARGET",
+                desc: "Désigner la cible et planifier la frappe avec précision tactique.",
+                img: "../../img/ogame/codex/killchain/target.png"
+            },
+            {
+                title: "ENGAGE",
+                desc: "Exécuter l’attaque selon les doctrines impériales, avec une force décisive.",
+                img: "../../img/ogame/codex/killchain/engage.png"
+            },
+            {
+                title: "ASSESS",
+                desc: "Évaluer les dégâts et adapter les opérations futures. Aucun survivant inutile.",
+                img: "../../img/ogame/codex/killchain/assess.png"
+            }
+        ];
+
+        let index = 0;
+        const imgEl = document.getElementById('carouselImage');
+        const titleEl = document.getElementById('stepTitle');
+        const descEl = document.getElementById('stepDesc');
+
+        function showSlide(i) {
+            const slide = slides[i];
+            imgEl.src = slide.img;
+            titleEl.textContent = slide.title;
+            descEl.textContent = slide.desc;
+        }
+
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        }
+
+        // Initial load
+        showSlide(index);
     </script>
 </body>
 
